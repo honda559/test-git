@@ -1,0 +1,121 @@
+centos8メモ
+https://qiita.com//k00j/items/8a631934e67b0c8bce68
+https://hackers-high.com/linux/centos8-installation/
+https://qiita.com/shark_No95/items/253de637261e98f66410
+https://goto-linux.com/ja/2020/5/5/rhel-8-/-centos-8-linux%E3%81%ABjava%E3%82%92%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%81%99%E3%82%8B%E6%96%B9%E6%B3%95/
+https://www.rem-system.com/centos8-apache-install/
+https://souiunogaii.hatenablog.com/entry/CentOS8-1stSetting
+
+Hyper-V仮想マシン作成
+https://acceliv.com/hyperv-windows10-setup/
+https://qiita.com/chenglin/items/ee4c2551dab39b770ccd
+https://paso-kake.com/it/windows10/6198/    ←Hypervisor有効化できないとき
+https://qiita.com/gate9/items/6a179f4ef5c2fcee2ae5
+
+tomcatメモ
+https://qiita.com/t_skri/items/3d9f2d425ae1f1b4c417
+
+apache-tomcat8.5
+http://tomcat.apache.org/download-80.cgi
+
+apacheメモ
+https://qiita.com/yasushi-jp/items/c5feeaff2024d3c069db
+https://weblabo.oscasierra.net/install-apache24-1/
+https://www.rem-system.com/centos8-apache-install/
+https://genchan.net/it/server/24643/★
+http://vault.centos.org/7.5.1804/os/x86_64/Packages/
+
+https://www.smiyasaka.com/CentOS7.0_x86_64_server.html
+\\192.168.101.137
+
+
+https://serverbuild.net/2020/02/03/centos7-tomcat9-install/
+
+https://tomcat.apache.org/download-90.cgi
+https://archive.apache.org/dist/tomcat/tomcat-9/v9.0.37/bin/
+
+
+apache-tomcat
+■systemd解説
+https://uouock.hatenablog.com/entry/2019/06/20/112119
+
+パーミッション
+証明書関係　６００にする
+
+
+
+rpm
+https://qiita.com/yokra9/items/e8842dee2c42fc479931
+http://panaceia.unicamp.br/repos/yum/testing/13/redhat/rhel-7.8-x86_64/
+
+libicu.rpm
+http://rpmfind.net/linux/rpm2html/search.php?query=libicu(x86-64)
+
+libxslt.so.1
+https://rpmfind.net/linux/rpm2html/search.php?query=libxslt.so.1()(64bit)
+https://rpmfind.net/linux/rpm2html/search.php?query=libxslt.so.1(LIBXML2_1.0.11)(64bit)
+https://rpmfind.net/linux/rpm2html/search.php?query=libxslt.so.1(LIBXML2_1.0.22)(64bit)
+https://rpmfind.net/linux/rpm2html/search.php?query=libxslt.so.1(LIBXML2_1.0.18)(64bit)
+
+
+
+httpd rpm取得サイト
+https://rpmfind.net/linux/rpm2html/search.php?query=httpd
+http://mirror.centos.org/centos/7/os/x86_64/Packages/
+http://rpmfind.net/
+
+httpd.conf関係
+https://qiita.com/brighton0725/items/0e116db637a8fea1d907
+http://normalse.hatenablog.jp/entry/2015/03/13/200755
+
+http://172.18.19.59/
+
+pstgresql参考
+https://seesaawiki.jp/w/khazad_lefty/d/PostgreSQL%A5%A4%A5%F3%A5%B9%A5%C8%A1%BC%A5%EB
+
+
+isoファイルからマウント参考サイト
+http://ossfan.net/setup/yum-01.html
+https://server-setting.info/centos/yum-install-from-dvd.html
+http://ykuri.sub.jp/linux/003.html
+
+
+ビルド　warファイル化
+mvn package -P [環境にあったprofileのid] -DskipTests=true
+
+tomcatログ確認
+tail -f /usr/local/apache-tomcat-8.5.59/logs/catalina.out
+
+apacheログ確認
+tail -f /var/log/httpd/access_log
+
+postgresログ確認
+tail -f /var/lib/pgsql/13/data/pg_log/postgresql.log-xxxxxxxx
+
+
+DBログインコマンド
+su - postgres
+psql -p 5432 -d gyokan
+
+
+http://192.168.120.11/GyokanApp/
+
+
+apache tomcat連携
+https://qiita.com/polarbear08/items/f016a0675e6c9637e7b8
+https://weblabo.oscasierra.net/tomcat-mod-proxy-ajp/
+http://normalse.hatenablog.jp/entry/2015/03/13/200755
+https://www.adminweb.jp/apache/tomcat/index3.html
+
+
+業管管理者パスワード
+ユーザ：system
+パスワード：Gyokan2015
+
+centosアカウント
+ユーザ名：y.honda
+パスワード：Gyokan2020
+
+useradd y.honda
+
+useradd -u 502 -g 100 r.usui
